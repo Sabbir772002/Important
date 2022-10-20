@@ -8,7 +8,7 @@ class MysqlCon{
             Connection con=DriverManager.getConnection(
                     "jdbc:mysql://localhost:3306/college","root","");
             Statement stmt=con.createStatement();
-            String s="select * from teacher";
+            //String s="select * from teacher";
             String s1="select * from teacher where name='sabbir'";
             ResultSet rs=stmt.executeQuery(s1);
             PreparedStatement pt = con.prepareStatement("INSERT INTO teacher(Name,Id,Salary,Subject) VALUES(?,?,?,?)");
