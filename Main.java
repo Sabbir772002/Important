@@ -13,7 +13,7 @@ class MysqlCon{
             ResultSet rs=stmt.executeQuery(s1);
             PreparedStatement pt = con.prepareStatement("INSERT INTO teacher(Name,Id,Salary,Subject) VALUES(?,?,?,?)");
             Scanner sc=new Scanner(System.in);
-            int i=5;
+            int i=4;
             try {
                 while (i < 5) {
                     i++;
